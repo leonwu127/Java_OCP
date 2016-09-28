@@ -13,6 +13,7 @@ Method/Field in a class and in a different package | N | N | N | Y
 * If a 'protected' member which is a variable or method, in order to get access to the member in another class but at
 the same package. You have to first instantiate the class. (e.g. new Object())
 
+
 ### 2. Overloading & Overriding
 
 **Overloading :**
