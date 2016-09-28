@@ -1,6 +1,8 @@
 # Advance Class Design
 ## Review OCA Concepts
+
 1. Access Modifiers
+
 Access Scenarios | private | default | protected | public
 ---------------- | ------- | ------- | --------- | ------
 Member in the same class | Y | Y | Y | Y
