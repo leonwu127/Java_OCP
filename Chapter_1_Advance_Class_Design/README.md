@@ -13,7 +13,6 @@ Method/Field in a class and in a different package | N | N | N | Y
 * If a 'protected' member which is a variable or method, in order to get access to the member in another class but at
 the same package. You have to first instantiate the class. (e.g. new Object())
 
-
 ### 2. Overloading & Overriding
 
 **Overloading :**
@@ -35,8 +34,37 @@ rules :
 * For overriding, the new overriding method needs to follow the following rules:
 
  1. Access modifiers must be the same or more accessible.
- 2. Return type must be the same or a more restrictive type, also known 'covariant' types. (e.g. Number -> Long , Long
+ 2. Return type must be the same or a more restrictive type, also known 'covariant' types. (e.g. Number -> Long, Long
  is Number's covariant type)
  3. If checked exceptions are thrown, only the same exceptions or subclasses of those exceptions are allowed to be thrown.
  4. Method can not be static or the method will be hidden and not overridden.
 
+### 3. Abstract Classes
+
+* An abstract class is a class that contains any number of methods including zero. The methods can be:
+
+ 1. Abstract method
+ 2. Concrete method
+
+* An abstract method have to be put into an abstract class.
+
+* The first concrete class that inherent from the abstract class has to implement all abstract methods in the abstract class.
+
+### 4. Static and Final
+
+* **final** prevent a variable or method from changing or overriding.
+* **static** makes a variable shared at the class level and uses the class name to refer to a method.
+
+* Final and static key words can be insert on the class level.
+ * static class - nested classes.
+ * final class - cannot be subclassed.
+ 
+### 5. Import
+
+* static method need to be import with static
+* Frequently used methods and packages:
+
+ 1. java.util.Collections.sort;
+ 2. java.util.Collections.*;
+ 3. java.util.*;
+ 
