@@ -1,2 +1,3 @@
 # Java_OCP
-记录学习Java SE 8并准备OCP考试的过程
+
+This repository contains the highly summaries of each knowledge points that you will need to review for OCP exams.

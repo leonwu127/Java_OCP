@@ -73,9 +73,13 @@ rules :
 * *A instanceof B* will return **true** if A is the instance of B, a subclass of B(directly or indirectly), or a class
 that implements the B interface(directly or indirectly).
  * Directly and indirectly means if there are multiple inheritance between the two classes.
- * **NOTICE** Compiler will be able to check *object instanceof class*, however, *object instanceof interface* will be checked during the runtime.
+ * **NOTICE :** Compiler will be able to check *object instanceof class*, however, *object instanceof interface* will be checked during the runtime.
  The reason is that the subclass could implement an interface without compiler noticed. => Java compiler always check the reference type first.
  If the reference type is the parent class or the same class of the *instanseof* class, then it checks the object that the reference pointed to.
  If the reference type is not parent class nor the same class then the compiling will not pass. As a class can only extend single parent once but interface
  can be implemented multiple times, the subclass has the portential to implement the interface while it is also extend its parent class. 
- * **Common Usages** *instanceof* has been widely used to determine whether an instance is a subclass of a particular object before applying an explicit cast.
+ * **Common Usages :** *instanceof* has been widely used to determine whether an instance is a subclass of a particular object before applying an explicit cast.
+ 
+## Understanding Virtual Method Invocation
+
+* Java has the preference to look for an overridden method rather than necessarily using the one in the class that the compiler says we have.
