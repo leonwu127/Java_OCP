@@ -92,3 +92,5 @@ that implements the B interface(directly or indirectly).
     1. Implementing a method from an interface
     2. Overriding a superclass method of a class
     3. Overriding a method declared in *Object*, such as *hashCode*, *equals*, or *toString*
+    
+* Coding equals, hashCode, and toString
