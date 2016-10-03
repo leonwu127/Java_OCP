@@ -83,3 +83,12 @@ that implements the B interface(directly or indirectly).
 ## Understanding Virtual Method Invocation
 
 * Java has the preference to look for an overridden method rather than necessarily using the one in the class that the compiler says we have.
+
+## Annotating Overridden Method
+
+* Java use *@* symbol, which is called annotation, to represent extra information about the program. It is also a type of metadata.
+
+* The *@override* annotation is used to express that the programmer is intent to:
+    1. Implementing a method from an interface
+    2. Overriding a superclass method of a class
+    3. Overriding a method declared in *Object*, such as *hashCode*, *equals*, or *toString*
