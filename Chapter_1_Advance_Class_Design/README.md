@@ -97,7 +97,7 @@ that implements the B interface(directly or indirectly).
 
 * toString(), equals() and hashCode() are three most commonly used method in *object* class
 
-### toString
+### 1. toString
    * Java automatically calls the toString() method if you try to print out an object.
    * Some classes supply a human readable implementation of *toString()* and others do not. (e.g. *ArrayList* produces *toString()* method, however, *String* dose not. If using *toString()* on both of 
     two objects only *ArrayList* will print the content with *String* only displaying its object id)
@@ -105,5 +105,5 @@ that implements the B interface(directly or indirectly).
    * Overriding the *toString()* method with annotation will give the subclass the ability to customize print output.
    * *Reflection* is a technique used in Java to look at information about the class at runtime. (e.g. *toString.hippo@12da89a7[name = Hurry]* )
     
-    
+### 2. equals
     
