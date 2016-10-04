@@ -106,4 +106,23 @@ that implements the B interface(directly or indirectly).
    * *Reflection* is a technique used in Java to look at information about the class at runtime. (e.g. *toString.hippo@12da89a7[name = Hurry]* )
     
 ### 2. equals
+   * Java use *==* to compare primitives and for checking if two variables **refer** to the same object.
+   * *equals()* method will check if two objects are equivalent. (or you can implement your own *equals()*)
+   * *equals()* in *Object* class is defined to check if the two objects are refer to the same object, which is the same with *==*. If the class did not contain new definition of *equals()*, it will have no difference with *==*
+   * Two Objects that compare as equals must generate the same hash code, but tow Objects with the same hash code do not have to be equal.
+
+### 3. hashcode
+   * *hashcode()* will always required to be overridden whenever *equals()* is overridden.
+   * *Hash code* is used when storing the object as a key in a map.
+   * A *hash code* is a number that represent an object(an instance of a class) with finite number of categories.
+   * It is common not to include *boolean* and *char* in the hash code.
+   * Three points when overriding *hashcode()*
+   
+        1.  Within the same program, the result of *hashCode()* must not change.
+        2.  If *equals()* returns *true* when called with two objects, calling *hashCode()* on each of those objects must return the same result.
+        3.  If *equals()* returns *false* when called with two objects, calling *hashCode()*o on each of those objects does not have to return a different result.
+        
+    * Do not use more parameters than *equals()*
+    
+##  Working with *Enums*
     
