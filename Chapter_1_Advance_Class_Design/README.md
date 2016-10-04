@@ -117,11 +117,9 @@ that implements the B interface(directly or indirectly).
    * A *hash code* is a number that represent an object(an instance of a class) with finite number of categories.
    * It is common not to include *boolean* and *char* in the hash code.
    * Three points when overriding *hashcode()*
-   
-        1.  Within the same program, the result of *hashCode()* must not change.
-        2.  If *equals()* returns *true* when called with two objects, calling *hashCode()* on each of those objects must return the same result.
-        3.  If *equals()* returns *false* when called with two objects, calling *hashCode()*o on each of those objects does not have to return a different result.
-        
+   1.  Within the same program, the result of *hashCode()* must not change.
+   2.  If *equals()* returns *true* when called with two objects, calling *hashCode()* on each of those objects must return the same result.
+   3.  If *equals()* returns *false* when called with two objects, calling *hashCode()*o on each of those objects does not have to return a different result.
     * Do not use more parameters than *equals()*
     
 ##  Working with *Enums*
