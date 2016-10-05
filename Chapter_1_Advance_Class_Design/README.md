@@ -123,4 +123,8 @@ that implements the B interface(directly or indirectly).
    * Do not use more parameters than *equals()*
     
 ##  Working with *Enums*
+An *enumeration* is like a fixed set of constants. In Java,an *enum* is a class that represents an enumeration.
+    *   *Enum* provides type-safe checking.
+    *   *Enum* is always represented by uppercase letters.
+    *   *Enum* mainly contains *static* members.
     
