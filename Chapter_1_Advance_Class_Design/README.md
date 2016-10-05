@@ -127,4 +127,4 @@ An *enumeration* is like a fixed set of constants. In Java,an *enum* is a class 
     *   *Enum* provides type-safe checking.
     *   *Enum* is always represented by uppercase letters.
     *   *Enum* mainly contains *static* members.
-    
+    *   *Enum* can not be extended.
