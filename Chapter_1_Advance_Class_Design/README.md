@@ -123,8 +123,20 @@ that implements the B interface(directly or indirectly).
    * Do not use more parameters than *equals()*
     
 ##  Working with *Enums*
-An *enumeration* is like a fixed set of constants. In Java,an *enum* is a class that represents an enumeration.
-    *   *Enum* provides type-safe checking.
-    *   *Enum* is always represented by uppercase letters.
-    *   *Enum* mainly contains *static* members.
-    *   *Enum* can not be extended.
+
+An *enumeration* is like a fixed set of constants. In Java,an *enum* is a class that represents an enumeration.*   
+
+ *   *Enum* provides type-safe checking.
+ *   *Enum* is always represented by uppercase letters.
+ *   *Enum* mainly contains *static* members.
+ *   *Enum* can not be extended.
+ 
+### 1. Using *Enums* in *Switch* Statements
+
+*Enum* may be used in *switch* statements.The case value can be directly the *Enum* content.
+
+### 2. Adding Constructors, Fields, and Methods
+
+ * Semicolon is needed if there is anything in the *enum* besides the values.
+ * If *enum* itself has an *abstract* method. This means that each and every *enum* value is required to implement this method.
+ 
